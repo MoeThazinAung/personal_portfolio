@@ -1,0 +1,314 @@
+@font-face{
+	font-family: 'poppin';
+	src: url('fonts/poppin/Poppins-Regular.ttf');
+}
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	color: #3D473E ;
+	font-family: poppin;
+	scroll-behavior: smooth;
+}
+.main-container{
+	background-color:  #83BBA1 ;
+	padding-top: 30px;
+}
+.container{
+	max-width: 900px;
+	margin: auto;
+	display: flex;
+	align-items: center;
+
+}
+.container:not(#header .container){
+	padding: 10px;
+}
+.section-title{
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.box-shadow{
+	box-shadow: 5px 5px 4px black	;
+}
+
+#header .container{
+	border: 5px solid #DAF7A6;
+	background-color: #A4E1C5;
+	border-radius: 10px;
+}
+#header .container .content{
+	flex-basis: 60%;
+	text-align: center;
+	line-height: 30px;
+	
+
+
+}
+#header .container .content h4{
+	letter-spacing: 10px;
+}
+#header .container .content h4,
+#header .container .content h2,
+#header .container .content p{
+	margin-bottom: 5px;
+}
+#header .container .image{
+	flex-basis: 40%;
+}
+#header .container .image img{
+	width: 100%;
+}
+
+.icons a{
+/*	color: #F21AF5 ;*/
+	font-size: 30px;
+	margin-right: 20px;
+
+}
+.icons .fa-youtube{
+	color: red;
+}
+.icons .fa-facebook{
+	color: blue;
+}
+.icons .fa-instagram{
+	color: red;
+}
+
+/*about css*/
+#aboutme{
+	margin-top: 50px;
+}
+#aboutme .content h2{
+	line-height: 40px;
+}
+#aboutme .container div{
+	flex-basis: 50%;
+}
+
+#aboutme .container img{
+	width: 250px;
+	height: 250px;
+	border-radius: 50%;
+	display: block;
+	margin: auto;
+}
+#aboutme .container img {
+    width: 250px;
+    height: 250px;
+    border: 5px solid #FFF;
+    border-bottom-color: #FF3D00;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+        } 
+#aboutme .container .content{
+	padding-left: 20px;
+/*	color: #3D473E;*/
+}
+
+/*myskills*/
+
+#myskills{
+	margin-top: 50px;
+}
+
+#myskills .container > div{
+	flex-basis: 50%;
+}
+#myskills .content ul{
+	list-style-type: none;
+}
+#myskills .content ul li{
+	display: inline-block;
+	background-color: rgba(230, 220, 231,0.6);
+	padding: 10px;
+	border-radius: 5px;
+	margin: 10px 10px 10px 0;
+	font-weight: bold;
+}
+#myskills .content ul li a{
+	text-decoration: none;
+	color: black ;
+}
+#myskills .content .title-2,
+#myskills .content .title-3{
+	margin-top: 10px;
+}
+/*#myskills .image{
+	padding: 80px 20px;
+}*/
+#myskills .image img{
+/*	width: 300px;*/
+	width: 100%;
+	display: block;
+	margin: auto;
+	border-radius: 5px;
+	transition: transform 1s;
+}
+
+#myskills .image img:hover{
+	transform: scale(1.1);
+}
+
+/*mywork*/
+#mywork{
+	margin-top: 50px;
+}
+
+#mywork .container{
+	justify-content: space-between;
+}
+#mywork .container .card{
+	padding: 20px 5px;
+	color: #3D473E;
+	text-align: center;
+	flex-basis: 30%;
+	background-color: #A4E1C5 ;
+	border-radius: 10px;
+	cursor: pointer;
+	transition: 1s, background-color 1s;
+
+}
+#mywork .container .card:hover{
+	background-color: #83BBA1;
+	transform: scale(1.2);
+}
+#mywork .container .card h2{
+	margin: 20px 0;
+}
+
+/*contact section*/
+#contact{
+	margin-top: 50px;
+}
+
+#contact .container > div{
+	
+	flex-basis: 50%;
+}
+#contact ul{
+	list-style-type: none;
+	font-weight: bold;
+	line-height: 40px;
+	color: #3D473E;
+
+}
+#contact .form .textarea{
+	width: 100%;
+	height: 100px;
+	border-radius: 5px;
+	border: none;
+	padding: 0 10px;
+	margin-bottom: 10px;
+}
+#contact .form .form-group{
+	margin-bottom: 10px;
+	display: flex;
+	justify-content: space-between;
+}
+#contact .form .form-group input{
+	height: 35px;
+	flex-basis: 48%;
+	border-radius: 5px;
+	border: none;
+	padding: 0 10px;
+}
+#contact .form button{
+	padding: 5px 30px;
+	border-radius: 5px;
+	border: none;
+	float: right;
+	background-color: #A4E1C5;
+}
+/*Footer Section*/
+#footer{
+	background-color: #A4E1C5;
+	padding: 40px 0 40px 0;
+	margin-top: 50px;
+}
+#footer .container{
+	justify-content: space-between;
+	
+/*	border: 2px solid white;*/
+}
+#footer .container h3{
+	margin-bottom: 20px;
+}
+#footer .container .content{
+/*	border: 2px solid white;*/
+	flex-basis: 30%;
+	line-height: 30px;
+	text-align: center;
+
+}
+#footer .container .content ul{
+	list-style-type: none;
+}
+#footer .container .content ul a{
+	text-decoration: none;
+	color: black;
+}
+#gototop{
+	background-color: yellow;
+	display: block;
+	width: 40px;
+	height: 35px;
+	line-height: 35px;
+	text-align: center;
+	font-size: 25px;
+	position: fixed;
+	bottom: 3px;
+	right: 3px;
+	border-radius: 3px;
+}
+
+@media (max-width:678px){
+	#header .container{
+		flex-direction: column-reverse;
+		border: none;
+		border-radius: 0;
+		box-shadow: 0px 0px;
+	}
+	#header .content{
+		padding: 20px 0;
+	}
+	#aboutme .container{
+		flex-direction: column;
+		text-align: center;
+	}
+	#aboutme .content{
+		padding: 20px 0;
+	}
+	#myskills .container{
+		flex-direction: column-reverse;
+	}
+	#myskills .content{
+		text-align: center;
+		padding: 20px 0;
+	}
+	#mywork .container{
+		flex-direction: column;
+	}
+	#mywork .container .card{
+/*		margin: 10px 0;*/
+		width: 80%;
+		margin: 10px auto;
+	}
+	#contact .container{
+		flex-direction: column;
+	}
+	#footer .container{
+		flex-direction: column;
+	}
+	#footer .content{
+		margin-top: 30px;
+	}
+	#footer .container h3{
+		margin-bottom: 10px;
+	}
+	
+
+}
